@@ -1,6 +1,6 @@
 package ma.youcode.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -11,7 +11,7 @@ public class Employes {
     private String nom_employe;
     private Float salaire;
 
-    @ManyToOne()
+    @ManyToOne
     private Departments departments;
 
     public Long getId() {

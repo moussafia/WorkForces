@@ -1,6 +1,6 @@
 package ma.youcode.entities;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
@@ -11,7 +11,7 @@ public class Departments {
     private Long id;
     private String nom;
 
-    @OneToMany(mappedBy = "departments")
+    @OneToMany
     private List<Employes> employes;
 
     public Long getId() {

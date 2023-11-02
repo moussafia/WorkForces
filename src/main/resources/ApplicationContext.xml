@@ -47,9 +47,11 @@
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />
     </context:component-scan>
 
-
     <bean name="employeeService" class="ma.youcode.service.EmployerMetierImpl">
         <constructor-arg index="0" ref="IEmployeDao"/>
+    </bean>
+    <bean name="departementService" class="ma.youcode.service.DepartementMetierImpl">
+        <constructor-arg index="0" ref="IDepartementDao"/>
     </bean>
 
 </beans>
