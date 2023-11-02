@@ -33,7 +33,7 @@
         </property>
     </bean>
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
-        <property name="entityManagerFactory" ref="entityManagerFactory" />
+        <property name="entityManagerFactory" ref="entityMangerFactory" />
     </bean>
     <tx:annotation-driven />
     <bean id="persistenceExceptionTranslationPostProcessor" class=
@@ -48,8 +48,8 @@
     </context:component-scan>
 
 
-    <bean name="employeeService" class="ma.youcode.service.DepartementMetierImpl">
-        <constructor-arg index="0" ref="employeeRepository"/>
+    <bean name="employeeService" class="ma.youcode.service.EmployerMetierImpl">
+        <constructor-arg index="0" ref="IEmployeDao"/>
     </bean>
 
 </beans>
