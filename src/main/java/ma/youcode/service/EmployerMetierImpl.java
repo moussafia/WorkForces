@@ -10,6 +10,7 @@ public class EmployerMetierImpl implements IEmployerMetier {
     private IEmployeDao iEmployeDao;
 
     public EmployerMetierImpl(IEmployeDao iEmployeDao) {
+
         this.iEmployeDao = iEmployeDao;
     }
 

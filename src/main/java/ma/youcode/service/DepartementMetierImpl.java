@@ -10,6 +10,7 @@ public class DepartementMetierImpl implements IDepartementMetier {
     private IDepartementDao iDepartementDao;
 
     public DepartementMetierImpl(IDepartementDao iDepartementDao) {
+
         this.iDepartementDao = iDepartementDao;
     }
 

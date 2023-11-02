@@ -14,7 +14,8 @@ public class Main {
 
         ApplicationContext context =
                 new ClassPathXmlApplicationContext("ApplicationContext.xml");
-                IEmployerMetier employerMetier =
+        System.out.println("kk");
+        IEmployerMetier employerMetier =
                         context.getBean("employeeService", EmployerMetierImpl.class);
 
     }
