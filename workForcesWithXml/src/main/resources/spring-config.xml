@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="departement" class="ma.youcode.entities.Departements" scope="singleton"
+    lazy-init="true">
+        <property name="name" value="departement A"></property>
+    </bean>
+    <bean id="employee" class="ma.youcode.entities.Employees"
+    lazy-init="true">
+        <property name="name" value="mohammed"></property>
+        <property name="salaire" value="10000"></property>
+    </bean>
+    <bean id="employeePrototype" class="ma.youcode.entities.Employees" scope="prototype">
+        <property name="name" value="mohammed moussafia"></property>
+        <property name="salaire" value="10000"></property>
+    </bean>
+
+</beans>
