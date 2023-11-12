@@ -1,4 +1,4 @@
-Resources:
+Ressources:
 
 https://satyacodes.gitlab.io/books/spring.pdf 
 
